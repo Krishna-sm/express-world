@@ -6,6 +6,9 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.send("<h1>Hello world</h1>");
 })
+app.get("/api",(req,res)=>{
+    res.json("msg":"this is a message"})
+})
 app.get('/about',(req,res)=>{
     // console.log(req.body.name)
     // console.log(req.query.name);
